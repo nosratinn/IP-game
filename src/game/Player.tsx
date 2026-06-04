@@ -133,7 +133,7 @@ export function Player({ levelId }: { levelId: LevelId }) {
       const forward = new THREE.Vector3(0, 0, -1).applyQuaternion(camera.quaternion);
       forward.y = 0;
       forward.normalize();
-      const right = new THREE.Vector3(1, 0, 0).applyQuaternion(camera.quaternion);
+      const right = new THREE.Vector3(-1, 0, 0).applyQuaternion(camera.quaternion);
       right.y = 0;
       right.normalize();
 
